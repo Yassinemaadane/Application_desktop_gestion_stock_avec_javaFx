@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.clientController">
+   <right>
+      <AnchorPane prefHeight="571.0" prefWidth="803.0" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableclient" layoutX="28.0" layoutY="61.0" prefHeight="499.0" prefWidth="644.0">
+              <columns>
+                <TableColumn fx:id="idcolumn" prefWidth="90.00000190734863" text="Code" />
+                <TableColumn fx:id="cincolumn" prefWidth="102.66667938232422" text="Cin" />
+                  <TableColumn fx:id="nomcolumn" prefWidth="83.99998474121094" text="Nom" />
+                  <TableColumn fx:id="prenomcolumn" prefWidth="122.6666259765625" text="Prenom" />
+                  <TableColumn fx:id="adressecolumn" prefWidth="109.99996948242188" text="Adresse" />
+                  <TableColumn fx:id="numerocolumn" prefWidth="134.66668701171875" text="Telephone" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txfsearch" layoutX="471.0" layoutY="22.0" prefHeight="25.0" prefWidth="164.0" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="168.0" />
+            <Label layoutX="375.0" layoutY="25.0" text="Rechercher">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnnouveau" alignment="TOP_LEFT" layoutX="697.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#openAddClient" prefHeight="25.0" prefWidth="96.0" text="Nouveau" textOverrun="LEADING_ELLIPSIS" AnchorPane.leftAnchor="697.0" AnchorPane.rightAnchor="10.0" />
+            <Button fx:id="btnmodifier" alignment="TOP_LEFT" layoutX="697.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Modifier" />
+            <Button fx:id="btnsupprimer" alignment="TOP_LEFT" layoutX="700.0" layoutY="168.0" mnemonicParsing="false" onMouseClicked="#deleteselected" prefHeight="25.0" prefWidth="95.0" text="Supprimer" />
+            <Button fx:id="btnimporter" alignment="TOP_LEFT" layoutX="700.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#importClients" prefHeight="27.0" prefWidth="96.0" text="importer" />
+            <Button fx:id="btnexporter" alignment="TOP_LEFT" layoutX="701.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#exportClients" prefHeight="25.0" prefWidth="94.0" text="Exporter" />
+            <Button fx:id="btnexit" alignment="TOP_LEFT" layoutX="699.0" layoutY="492.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Exit" />
+            <FontAwesomeIconView fx:id="iconsearch" fontSmoothingType="LCD" glyphName="SEARCH" layoutX="652.0" layoutY="42.0" onMouseClicked="#chercher" selectionFill="#ff7c7c" size="21" wrappingWidth="19.142918586730957" />
+            <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="760.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="764.0" layoutY="74.0">
+               <image>
+                  <Image url="@../../../../Downloads/plus-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="764.0" layoutY="121.0">
+               <image>
+                  <Image url="@../../../../Downloads/edit-user-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="767.0" layoutY="170.0">
+               <image>
+                  <Image url="@../../../../Downloads/delete-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="763.0" layoutY="259.0">
+               <image>
+                  <Image url="@../../../../Downloads/upload-2-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="26.0" layoutX="763.0" layoutY="342.0">
+               <image>
+                  <Image url="@../../../../Desktop/fx/images/export-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="23.0" layoutX="756.0" layoutY="497.0">
+               <image>
+                  <Image url="@../../../../Desktop/fx/images/delete-1-icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnrefresh" alignment="TOP_LEFT" layoutX="697.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#showClient" prefHeight="25.0" prefWidth="96.0" text="Refresh" textOverrun="LEADING_ELLIPSIS" />
+            <FontAwesomeIconView glyphName="REFRESH" layoutX="769.0" layoutY="42.0" size="20" wrappingWidth="8.285714149475098" />
+            <Button fx:id="btnsupprtous" onMouseClicked="#deleteAll" alignment="TOP_LEFT" layoutX="700.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Suppr Tous" />
+            <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="769.0" layoutY="216.0">
+               <image>
+                  <Image url="@../../../../Downloads/delete-256.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="cbsearch" layoutX="184.0" layoutY="23.0" prefWidth="150.0" />
+            <Label layoutX="28.0" layoutY="25.0" text="Cretere de recherche">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.miseStockController">
+   <top>
+      <Pane prefHeight="418.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtrechercher" layoutX="191.0" layoutY="72.0" />
+            <Label layoutX="72.0" layoutY="74.0" prefHeight="17.0" prefWidth="78.0" text="Rechercher" />
+            <FontAwesomeIconView fx:id="iconsearch" fontSmoothingType="LCD" glyphName="SEARCH" layoutX="373.0" layoutY="90.0" selectionFill="#ff7c7c" size="21" wrappingWidth="19.142918586730957" />
+            <TextField fx:id="txtajouterstock"  layoutX="191.0" layoutY="277.0" />
+            <Label layoutX="72.0" layoutY="130.0" prefHeight="17.0" prefWidth="102.0" text="Stock disponible" />
+            <TextField fx:id="txtstock" editable="false" layoutX="191.0" layoutY="126.0" prefHeight="25.0" prefWidth="152.0" />
+            <Label layoutX="71.0" layoutY="281.0" prefHeight="17.0" prefWidth="95.0" text="Ajouter au stock" />
+            <Button id="btnvalider" fx:id="btnajouterstock" onMouseClicked="#updateStock" layoutX="383.0" layoutY="273.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Ajouter" />
+            <Button id="btnquitter" fx:id="btnquitter" layoutX="340.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Quitter" />
+            <Button id="btnvalider" fx:id="btnvalider" layoutX="118.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Valider" />
+            <Label fx:id="labeldes" layoutX="191.0" layoutY="169.0" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" />
+            <Label layoutX="72.0" layoutY="203.0" prefHeight="17.0" prefWidth="106.0" text="Description Article" />
+            <Label layoutX="251.0" layoutY="24.0" text="Mise a jour stock">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

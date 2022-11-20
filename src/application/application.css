@@ -1,0 +1,296 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#btn{
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+#awfile{
+	 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+#btnstock{
+	
+	 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+#btngestion{
+		 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+     -fx-margin: 25px 50px 75px;
+}
+#btnproduit{
+		 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+     -fx-margin: 25px 50px 75px;
+}
+#btncredit{
+		 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+     -fx-margin: 25px 50px 75px;
+}
+
+#btnfr{
+		 -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+     -fx-margin: 25px 50px 75px;
+}
+
+
+
+
+
+* {
+	-fx-primary-color: #007acc;
+	-fx-secondary-color: #4B6EAF;
+	-fx-accent-color: #B6FF00;
+	-fx-grey-color: #b9b9b9;
+	-fx-light-grey-color: #d1d1d1;
+	-fx-lightest-grey-color: #F9F9FB;
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.table-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-cursor: hand;
+}
+.table-button:hover{
+	-fx-background-color: transparent;
+}
+.table-view {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+.table-view .column-header {
+	-fx-background-color: -fx-light-grey-color;
+	-fx-border-color: -fx-grey-color;
+}
+.table-view .column-header .label{
+	-fx-font-weight: bold; 
+	-fx-alignment: center-left;
+}
+/* This is just magic */
+.table-row-cell:filled {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent -fx-lightest-grey-color -fx-lightest-grey-color -fx-lightest-grey-color, transparent;
+	-fx-border-insets: 0, 1;
+}
+.table-row-cell:empty {
+	-fx-background-color: transparent;
+}
+.table-row-cell:filled:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected {
+  	-fx-background-color: #eaeaea;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+.table-view .cell:filled{
+	-fx-cell-size: 30;
+	-fx-alignment: center-left;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: white;
+}
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: -fx-accent-color;
+}
+.table-view .placeholder .label {
+	-fx-text-fill: red;
+	-fx-padding:20px;
+}
+
+
+.text-field {
+	 -fx-background-color: red;
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px; 
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #28a3f4;
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color: black ;
+    -fx-text-fill: white ;
+    -fx-font-family: "Calibri" ;
+}
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: yellow ;
+    -fx-background-color: green ;
+}
+
+
+#btnvalider {
+  -fx-color-one: #d6d6d6;
+  -fx-color-two: #d9d9d9;
+  -fx-color-three: #f6f6f6;
+
+  -fx-background-color:
+      linear-gradient(#f2f2f2, -fx-color-one),
+      linear-gradient(#fcfcfc 0%, -fx-color-two 20%, -fx-color-one 100%),
+      linear-gradient(#dddddd 0%, -fx-color-three 50%);
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-text-fill: black;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#btnvalider:hover {
+  -fx-color-one: #119800;
+  -fx-color-two: #119800;
+  -fx-color-three: #119800;
+}
+
+#btnvalider:pressed {
+  -fx-color-one: #235891;
+  -fx-color-two: #235891;
+  -fx-color-three: #235891;
+}
+#btnquitter {
+  -fx-color-one: #d6d6d6;
+  -fx-color-two: #d9d9d9;
+  -fx-color-three: #f6f6f6;
+
+  -fx-background-color:
+      linear-gradient(#f2f2f2, -fx-color-one),
+      linear-gradient(#fcfcfc 0%, -fx-color-two 20%, -fx-color-one 100%),
+      linear-gradient(#dddddd 0%, -fx-color-three 50%);
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-text-fill: black;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+
+
+
+
+#btnquitter:hover {
+  -fx-color-one: #981100;
+  -fx-color-two: #981100;
+  -fx-color-three: #981100;
+}
+
+#btnquitter:pressed {
+  -fx-color-one: #235891;
+  -fx-color-two: #235891;
+  -fx-color-three: #235891;
+}
+
+#btnfc{
+	
+    -fx-font-size:40;
+}
+
+

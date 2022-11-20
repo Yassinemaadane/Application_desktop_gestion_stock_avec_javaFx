@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.produitController">
+   <top>
+      <AnchorPane prefHeight="593.0" prefWidth="843.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView id="tvarticle" fx:id="tablearticle" layoutX="7.0" layoutY="61.0" prefHeight="497.0" prefWidth="703.0">
+              <columns>
+                <TableColumn fx:id="referencecolumn" prefWidth="75.3333683013916" text="Reference" />
+                <TableColumn fx:id="designationcolumn" prefWidth="94.66666412353516" text="Designation" />
+                  <TableColumn fx:id="prixacolumn" prefWidth="95.99998474121094" text="Prix achat" />
+                  <TableColumn fx:id="prixvcolumn" prefWidth="87.33334350585938" text="Prix Vente" />
+                  <TableColumn fx:id="famillecolumn" prefWidth="78.0" text="Famille" />
+                  <TableColumn fx:id="fournisseurcolumn" minWidth="0.0" prefWidth="91.99996948242188" text="Fournisseur" />
+                  <TableColumn fx:id="quantitecolumn" prefWidth="89.33331298828125" text="Quantité" />
+                  <TableColumn fx:id="enstockcolumn" prefWidth="91.33331298828125" text="En Stock" />
+              </columns>
+            </TableView>
+            <TextField layoutX="175.0" layoutY="23.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="428.0" />
+            <Label layoutX="34.0" layoutY="22.0" text="Rechercher">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnnouveau" alignment="TOP_LEFT" layoutX="721.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#AddProduit" prefHeight="25.0" prefWidth="96.0" text="Nouveau" textOverrun="LEADING_ELLIPSIS" AnchorPane.leftAnchor="721.0" AnchorPane.rightAnchor="17.0" />
+            <Button alignment="TOP_LEFT" layoutX="721.0" layoutY="109.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Modifier" />
+            <Button fx:id="btnsupprimer" alignment="TOP_LEFT" layoutX="724.0" layoutY="158.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Supprimer" />
+            <Button fx:id="btnimporter" alignment="TOP_LEFT" layoutX="724.0" layoutY="246.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="96.0" text="importer" />
+            <Button fx:id="btnexporter" alignment="TOP_LEFT" layoutX="725.0" layoutY="328.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Exporter" />
+            <Button fx:id="btnexit" onMouseClicked="#quitter" alignment="TOP_LEFT" layoutX="723.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Exit" />
+            <FontAwesomeIconView fontSmoothingType="LCD" glyphName="SEARCH" layoutX="430.0" layoutY="43.0" selectionFill="#ff7c7c" size="21" wrappingWidth="19.142918586730957" />
+            <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="760.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="788.0" layoutY="64.0">
+               <image>
+                  <Image url="@../../../../Downloads/plus-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="788.0" layoutY="111.0">
+               <image>
+                  <Image url="@../../../../Downloads/edit-user-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="791.0" layoutY="160.0">
+               <image>
+                  <Image url="@../../../../Downloads/delete-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="787.0" layoutY="249.0">
+               <image>
+                  <Image url="@../../../../Downloads/upload-2-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="26.0" layoutX="787.0" layoutY="332.0">
+               <image>
+                  <Image url="@../../../../Desktop/fx/images/export-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="23.0" layoutX="780.0" layoutY="487.0">
+               <image>
+                  <Image url="@../../../../Desktop/fx/images/delete-1-icon.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.fournisseurController">
+   <children>
+      <AnchorPane accessibleText="read-only" layoutX="-15.0" prefHeight="426.0" prefWidth="705.0" stylesheets="@../application/application.css" AnchorPane.leftAnchor="-15.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="idcfield" layoutX="146.0" layoutY="81.0" />
+            <TextField fx:id="cinfield" layoutX="146.0" layoutY="128.0" />
+            <TextField fx:id="nomfield" layoutX="146.0" layoutY="177.0" />
+            <TextField fx:id="prenomfield" layoutX="146.0" layoutY="227.0" />
+            <TextField fx:id="adressefield" layoutX="517.0" layoutY="128.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField editable="false" layoutX="517.0" layoutY="81.0" prefHeight="25.0" prefWidth="51.0" promptText="+212" text="+212" />
+            <Label layoutX="517.0" layoutY="81.0" />
+            <Label layoutX="52.0" layoutY="85.0" prefHeight="17.0" prefWidth="69.0" text="Code           :" />
+            <Label layoutX="53.0" layoutY="181.0" prefHeight="17.0" prefWidth="69.0" text="Adresse       :" />
+            <Label layoutX="53.0" layoutY="231.0" text="Code postal :" />
+            <Label layoutX="434.0" layoutY="132.0" prefHeight="17.0" prefWidth="65.0" text="Fax       :" />
+            <Label layoutX="426.0" layoutY="85.0" text="Telephone" />
+            <Label layoutX="50.0" layoutY="132.0" prefHeight="17.0" prefWidth="69.0" text="Nom            :" />
+            <TextField fx:id="numfield" layoutX="568.0" layoutY="81.0" prefHeight="25.0" prefWidth="111.0" />
+            <Button id="btnvalider" fx:id="btnvalider" layoutX="129.0" layoutY="336.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Valider" />
+            <Label layoutX="196.0" layoutY="31.0" prefHeight="27.0" prefWidth="312.0" text="Creation Nouveau Fournisseur">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="181.0" prefHeight="17.0" prefWidth="65.0" text="Email       :" />
+            <TextField fx:id="adressefield1" layoutX="511.0" layoutY="177.0" prefHeight="25.0" prefWidth="167.0" />
+            <Button id="btnquitter" fx:id="btnquitter" layoutX="458.0" layoutY="336.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Quitter" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
