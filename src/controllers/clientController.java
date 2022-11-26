@@ -9,6 +9,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -31,6 +33,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import javax.print.attribute.standard.DateTimeAtCreation;
+
+import org.testng.reporters.jq.Model;
 
 public class clientController implements Initializable{
 	  connexionMysql connectNow= new connexionMysql();
@@ -306,6 +310,16 @@ fw.close();
 	        	cbsearch.getSelectionModel().select(1);
       }
 	
+	
+@FXML
+public void handle(KeyEvent e) {
+	if(e.getCode().equals(KeyCode.ENTER)) {
+		System.out.println(txfsearch.getText());
+	}
+	
+}
+	
+	
 	public void chercher() throws SQLException {
 		for ( int i = 0; i<tableclient.getItems().size(); i++) {
 		    tableclient.getItems().clear();
@@ -358,6 +372,7 @@ public void exit() {
 try {
 	showClient();
 	remplirRechercher();
+
 } catch (SQLException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();

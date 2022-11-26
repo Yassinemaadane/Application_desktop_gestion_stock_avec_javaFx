@@ -11,8 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -29,6 +31,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import models.article;
 import models.client;
 public class stockController implements Initializable{
@@ -216,6 +219,16 @@ if((a instanceof article)==true) {
 	 secondStage.initModality(Modality.APPLICATION_MODAL);
 	 secondStage.setResizable(false);
 	 secondStage.showAndWait();
+	 secondStage.setOnCloseRequest((EventHandler<WindowEvent>) new EventHandler<WindowEvent>() {
+		    public void handle(WindowEvent we) {
+		    	try {
+					showArticle();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+		});
 	
 	
 	
@@ -286,20 +299,25 @@ public void openAddAuStock() throws IOException {
 
 
 
+public void refresh() {
+	
+	System.out.println("hey");
+}
+
 
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
 			try {
 				remplirRechercher();
+				showArticle();
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
 		
-		try {
-			showArticle();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+			
+		
+			
+		
 		}}
 	    

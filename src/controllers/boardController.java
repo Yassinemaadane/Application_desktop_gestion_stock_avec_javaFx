@@ -64,6 +64,19 @@ public void openFournisseur(MouseEvent event) throws IOException {
     
     
 }
+
+
+public void openFacture(MouseEvent event) throws IOException {
+	   Stage secondStage = new Stage();
+	Parent root = FXMLLoader.load(getClass().getResource("/templates/facture.fxml"));
+	 Scene scene = new Scene(root);
+	 secondStage.setScene(scene);
+	 secondStage.show();
+
+ 
+ 
+}
+
 public void openStock(MouseEvent event) throws IOException {
 	   Stage secondStage = new Stage();
 	Parent root = FXMLLoader.load(getClass().getResource("/templates/stock.fxml"));

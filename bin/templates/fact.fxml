@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1244.0" style="-fx-background-color: #86CDD9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="650.0" prefWidth="1213.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-8.0" prefHeight="191.0" prefWidth="1244.0" style="-fx-background-color: #179BB0;" stylesheets="@../application/table.css">
+               <children>
+                  <Label layoutX="63.0" layoutY="53.0" prefHeight="17.0" prefWidth="43.0" text="Client" />
+                  <ComboBox layoutX="132.0" layoutY="49.0" prefHeight="25.0" prefWidth="109.0" />
+                  <ComboBox editable="true" layoutX="274.0" layoutY="49.0" prefHeight="25.0" prefWidth="107.0" />
+                  <Label layoutX="208.0" layoutY="21.0" prefHeight="17.0" prefWidth="132.0" text="Informations du client" />
+                  <Separator layoutX="401.0" layoutY="21.0" orientation="VERTICAL" prefHeight="158.0" prefWidth="7.0" />
+                  <Label layoutX="548.0" layoutY="21.0" prefHeight="17.0" prefWidth="132.0" text="Informations du facture" />
+                  <Separator layoutX="835.0" layoutY="29.0" orientation="VERTICAL" prefHeight="158.0" prefWidth="7.0" />
+                  <Label layoutX="980.0" layoutY="21.0" prefHeight="17.0" prefWidth="177.0" text="Informations du paiement" />
+                  <DatePicker layoutX="525.0" layoutY="87.0" prefHeight="25.0" prefWidth="146.0" />
+                  <TextField layoutX="525.0" layoutY="49.0" prefHeight="25.0" prefWidth="146.0" />
+                  <Label layoutX="464.0" layoutY="53.0" text="Reference" />
+                  <Label layoutX="464.0" layoutY="91.0" prefHeight="17.0" prefWidth="30.0" text="Date" />
+                  <Separator layoutX="-67.0" layoutY="188.0" prefHeight="2.0" prefWidth="1300.0" />
+                  <Label layoutX="915.0" layoutY="54.0" text="Label" />
+                  <ComboBox layoutX="969.0" layoutY="50.0" prefWidth="150.0" />
+                  <Label layoutX="915.0" layoutY="91.0" text="Label" />
+                  <ComboBox layoutX="969.0" layoutY="90.0" prefWidth="150.0" />
+                  <ComboBox layoutX="525.0" layoutY="132.0" prefWidth="150.0" />
+                  <Label layoutX="464.0" layoutY="136.0" prefHeight="17.0" prefWidth="30.0" text="Tva" />
+               </children>
+            </Pane>
+            <Pane id="pane" layoutX="-9.0" layoutY="191.0" prefHeight="105.0" prefWidth="1246.0" stylesheets="@../application/table.css">
+               <children>
+                  <TextField layoutX="79.0" layoutY="28.0" prefHeight="25.0" prefWidth="126.0" />
+                  <TextField layoutX="514.0" layoutY="28.0" prefHeight="25.0" prefWidth="97.0" />
+                  <TextField layoutX="273.0" layoutY="28.0" prefHeight="25.0" prefWidth="178.0" />
+                  <CheckBox contentDisplay="RIGHT" layoutX="914.0" layoutY="32.0" mnemonicParsing="false" text="Remise" />
+                  <TextField layoutX="1119.0" layoutY="28.0" prefHeight="25.0" prefWidth="93.0" />
+                  <ComboBox layoutX="994.0" layoutY="28.0" prefHeight="25.0" prefWidth="93.0" />
+                  <TextField layoutX="678.0" layoutY="28.0" />
+                  <Label layoutX="51.0" layoutY="6.0" text="Label" />
+                  <Label layoutX="250.0" layoutY="7.0" text="Label" />
+                  <Label layoutX="500.0" layoutY="7.0" text="Label" />
+                  <Label layoutX="664.0" layoutY="7.0" text="Label" />
+                  <Button layoutX="1166.0" layoutY="73.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="1061.0" layoutY="73.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="955.0" layoutY="73.0" mnemonicParsing="false" text="Button" />
+               </children>
+               <styleClass>
+                  <String fx:value="Pane-shadow" />
+                  <String fx:value="color-properties" />
+               </styleClass>
+            </Pane>
+            <Pane layoutY="305.0" prefHeight="179.0" prefWidth="1232.0">
+               <children>
+                  <TableView id="tvarticle" fx:id="tablearticle" layoutY="-2.0" prefHeight="179.0" prefWidth="1160.0" stylesheets="@../application/table.css">
+                     <columns>
+                        <TableColumn fx:id="referencecolumn" prefWidth="137.3333181142807" text="Reference" />
+                        <TableColumn fx:id="designationcolumn" prefWidth="216.6666717529297" text="Designation" />
+                        <TableColumn fx:id="prixacolumn" prefWidth="158.66668701171875" text="Prix achat" />
+                        <TableColumn fx:id="prixvcolumn" prefWidth="112.0" text="Prix Vente" />
+                        <TableColumn fx:id="famillecolumn" prefWidth="113.3333740234375" text="Famille" />
+                        <TableColumn fx:id="fournisseurcolumn" minWidth="0.0" prefWidth="68.0" text="Fournisseur" />
+                        <TableColumn fx:id="quantitecolumn" prefWidth="498.00006103515625" text="Quantité" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="485.0" prefHeight="109.0" prefWidth="271.0" style="-fx-background-color: #053545;">
+               <children>
+                  <GridPane layoutX="14.0" layoutY="-7.0" prefHeight="90.0" prefWidth="228.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.33334350585938" minWidth="10.0" prefWidth="76.66666666666666" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.99999237060547" minWidth="10.0" prefWidth="152.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="77.0" text="Code :" />
+                        <Label layoutX="10.0" layoutY="17.0" prefHeight="17.0" prefWidth="77.0" text="Label" GridPane.columnIndex="1" />
+                        <Label layoutX="10.0" layoutY="17.0" prefHeight="17.0" prefWidth="77.0" text="Code :" />
+                        <Label prefHeight="17.0" prefWidth="77.0" text="Nom:" GridPane.rowIndex="1" />
+                        <Label layoutX="10.0" layoutY="47.0" prefHeight="17.0" prefWidth="77.0" text="Tele" GridPane.rowIndex="2" />
+                        <Label layoutX="124.0" layoutY="17.0" prefHeight="17.0" prefWidth="77.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label layoutX="124.0" layoutY="47.0" prefHeight="17.0" prefWidth="77.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Pane layoutX="348.0" layoutY="485.0" prefHeight="109.0" prefWidth="297.0" style="-fx-background-color: #053545;">
+               <children>
+                  <Label layoutX="36.0" layoutY="6.0" style="-fx-background-color: #;" text="Label" />
+               </children>
+            </Pane>
+            <Pane layoutX="757.0" layoutY="485.0" prefHeight="109.0" prefWidth="277.0" style="-fx-background-color: #053545 #053545;">
+               <children>
+                  <Label layoutX="36.0" layoutY="6.0" style="-fx-background-color: #;" text="Label" />
+               </children>
+            </Pane>
+            <Button layoutX="968.0" layoutY="604.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="886.0" layoutY="604.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="795.0" layoutY="604.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

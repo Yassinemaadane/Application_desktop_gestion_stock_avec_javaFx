@@ -14,6 +14,7 @@ import java.util.ResourceBundle;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -114,9 +115,9 @@ public class miseStockController implements Initializable{
 	    }
 	    
 	    
+public void exit() throws IOException {
 
-	    
-	    
+}
 	    
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {

@@ -28,7 +28,7 @@
                   <TableColumn fx:id="numerocolumn" prefWidth="134.66668701171875" text="Telephone" />
               </columns>
             </TableView>
-            <TextField fx:id="txfsearch" layoutX="471.0" layoutY="22.0" prefHeight="25.0" prefWidth="164.0" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="168.0" />
+            <TextField fx:id="txfsearch" layoutX="471.0" layoutY="22.0" onTouchPressed="#handle" prefHeight="25.0" prefWidth="164.0" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="168.0" />
             <Label layoutX="375.0" layoutY="25.0" text="Rechercher">
                <font>
                   <Font size="15.0" />
@@ -74,13 +74,13 @@
             </ImageView>
             <Button fx:id="btnrefresh" alignment="TOP_LEFT" layoutX="697.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#showClient" prefHeight="25.0" prefWidth="96.0" text="Refresh" textOverrun="LEADING_ELLIPSIS" />
             <FontAwesomeIconView glyphName="REFRESH" layoutX="769.0" layoutY="42.0" size="20" wrappingWidth="8.285714149475098" />
-            <Button fx:id="btnsupprtous" onMouseClicked="#deleteAll" alignment="TOP_LEFT" layoutX="700.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Suppr Tous" />
+            <Button fx:id="btnsupprtous" alignment="TOP_LEFT" layoutX="700.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#deleteAll" prefHeight="25.0" prefWidth="95.0" text="Suppr Tous" />
             <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="769.0" layoutY="216.0">
                <image>
                   <Image url="@../../../../Downloads/delete-256.png" />
                </image>
             </ImageView>
-            <ComboBox fx:id="cbsearch" layoutX="184.0" layoutY="23.0" prefWidth="150.0" />
+            <ComboBox fx:id="cbsearch" editable="true" layoutX="184.0" layoutY="23.0" prefWidth="150.0" />
             <Label layoutX="28.0" layoutY="25.0" text="Cretere de recherche">
                <font>
                   <Font size="15.0" />

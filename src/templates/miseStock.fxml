@@ -20,8 +20,8 @@
             <TextField fx:id="txtstock" editable="false" layoutX="191.0" layoutY="126.0" prefHeight="25.0" prefWidth="152.0" />
             <Label layoutX="71.0" layoutY="281.0" prefHeight="17.0" prefWidth="95.0" text="Ajouter au stock" />
             <Button id="btnvalider" fx:id="btnajouterstock" onMouseClicked="#updateStock" layoutX="383.0" layoutY="273.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Ajouter" />
-            <Button id="btnquitter" fx:id="btnquitter" layoutX="340.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Quitter" />
-            <Button id="btnvalider" fx:id="btnvalider" layoutX="118.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Valider" />
+            <Button id="btnquitter" fx:id="btnquitter"  layoutX="340.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Quitter" />
+            <Button id="btnvalider" onMouseClicked="#exit" fx:id="btnvalider" layoutX="118.0" layoutY="339.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="133.0" stylesheets="@../application/application.css" text="Valider" />
             <Label fx:id="labeldes" layoutX="191.0" layoutY="169.0" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" />
             <Label layoutX="72.0" layoutY="203.0" prefHeight="17.0" prefWidth="106.0" text="Description Article" />
             <Label layoutX="251.0" layoutY="24.0" text="Mise a jour stock">

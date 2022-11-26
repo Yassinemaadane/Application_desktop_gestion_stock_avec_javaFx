@@ -95,18 +95,18 @@
    <center>
       <Pane prefHeight="629.0" prefWidth="1200.0" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnfr" alignment="BASELINE_RIGHT" layoutX="274.0" layoutY="210.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="199.0" style="-fx-font-size: 15;" stylesheets="@../application/application.css" onMouseClicked="#openFournisseur" text="Fournisseurs" textFill="WHITE">
+            <Button fx:id="btnfr" alignment="BASELINE_RIGHT" layoutX="274.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#openFournisseur" prefHeight="63.0" prefWidth="199.0" style="-fx-font-size: 15;" stylesheets="@../application/application.css" text="Fournisseurs" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font></Button>
-            <Button fx:id="btn" layoutX="38.0" layoutY="210.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="201.0" stylesheets="@../application/application.css" />
+            <Button fx:id="btn" onMouseClicked="#openFacture" layoutX="38.0" layoutY="210.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="201.0" stylesheets="@../application/application.css" />
             <FontAwesomeIconView fx:id="awfile" fill="#dddddd" glyphName="FILE" layoutX="64.0" layoutY="254.0" selectionFill="#4e1111" style="-glyph-size: 35px; -fx-cursor: TRUE;" wrappingWidth="30.952401161193848">
                <font>
                   <Font size="16.0" />
                </font>
             </FontAwesomeIconView>
             <Button fx:id="btngestion" layoutX="37.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#openClient" prefHeight="63.0" prefWidth="199.0" stylesheets="@../application/application.css" />
-            <Button fx:id="btnstock" onMouseClicked="#openStock" layoutX="37.0" layoutY="315.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="201.0" stylesheets="@../application/application.css" />
+            <Button fx:id="btnstock" layoutX="37.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#openStock" prefHeight="63.0" prefWidth="201.0" stylesheets="@../application/application.css" />
             <Label layoutX="139.0" layoutY="233.0" prefHeight="17.0" prefWidth="61.0" text="FACTURE" textFill="WHITE" />
             <Label layoutX="139.0" layoutY="338.0" text="GESTION ST0CK" textFill="WHITE" />
             <Button fx:id="btncredit" layoutX="274.0" layoutY="315.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="199.0" stylesheets="@../application/application.css" />
