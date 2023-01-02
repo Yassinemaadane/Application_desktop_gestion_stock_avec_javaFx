@@ -12,29 +12,31 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1244.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.factureController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="186.0" layoutX="18.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="1215.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="911.0" layoutY="283.0" stroke="BLACK" strokeType="INSIDE" width="308.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="81.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
       <Label layoutX="91.0" layoutY="94.0" prefHeight="17.0" prefWidth="43.0" text="Client" />
       <ComboBox fx:id="cbrecherche" layoutX="145.0" layoutY="90.0" prefHeight="25.0" prefWidth="109.0" />
-      <ComboBox fx:id="cbclient" onMouseClicked="#remplirClients" editable="true" layoutX="265.0" layoutY="90.0" prefHeight="25.0" prefWidth="107.0" />
+      <ComboBox fx:id="cbclient" editable="true" layoutX="265.0" layoutY="90.0" onMouseClicked="#remplirClients" prefHeight="25.0" prefWidth="107.0" />
       <Label layoutX="173.0" layoutY="57.0" prefHeight="17.0" prefWidth="132.0" text="Informations du client" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="905.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="905.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="493.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
       <Label layoutX="599.0" layoutY="57.0" prefHeight="17.0" prefWidth="132.0" text="Informations du facture" />
-      <DatePicker fx:id="datef" layoutX="576.0" layoutY="123.0" prefHeight="25.0" prefWidth="146.0" />
-      <TextField fx:id="txtrf" layoutX="576.0" layoutY="85.0" prefHeight="25.0" prefWidth="146.0" />
+      <DatePicker fx:id="datef" layoutX="576.0" layoutY="123.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField fx:id="txtrf" layoutX="576.0" layoutY="85.0" prefHeight="25.0" prefWidth="203.0" />
       <Label layoutX="515.0" layoutY="89.0" text="Reference" />
       <Label layoutX="515.0" layoutY="127.0" prefHeight="17.0" prefWidth="30.0" text="Date" />
       <Label layoutX="988.0" layoutY="57.0" prefHeight="17.0" prefWidth="177.0" text="Informations du paiement" />
-      <Label layoutX="923.0" layoutY="97.0" text="Reglement par" />
-      <ComboBox fx:id="cbreference" layoutX="1018.0" layoutY="93.0" prefHeight="25.0" prefWidth="107.0" />
-      <Label layoutX="923.0" layoutY="134.0" text="Statut regelemnt" />
-      <ComboBox fx:id="cbstatut" layoutX="1020.0" layoutY="133.0" prefHeight="25.0" prefWidth="107.0" />
+      <Label layoutX="929.0" layoutY="135.0" text="Réglement par" />
+      <ComboBox fx:id="cbreference" disable="true" layoutX="1023.0" layoutY="135.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="920.0" layoutY="97.0" text="Statut régelement" />
+      <ComboBox fx:id="cbstatutr" disable="true" layoutX="1023.0" layoutY="93.0" onMouseClicked="#Statut" onMouseDragExited="#Statut" onMouseExited="#Statut" prefHeight="25.0" prefWidth="177.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="93.0" layoutX="18.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" width="1215.0" />
-      <TextField fx:id="txfref" layoutX="82.0" layoutY="257.0" prefHeight="25.0" prefWidth="126.0" />
+      <TextField fx:id="txfref" layoutX="82.0" layoutY="257.0" onKeyTyped="#Key" prefHeight="25.0" prefWidth="126.0" />
       <TextField fx:id="txfprix" layoutX="541.0" layoutY="256.0" prefHeight="25.0" prefWidth="97.0" />
       <TextField fx:id="txfdes" layoutX="319.0" layoutY="257.0" prefHeight="25.0" prefWidth="168.0" />
       <TextField fx:id="txfqte" layoutX="708.0" layoutY="257.0" prefHeight="25.0" prefWidth="78.0" />
@@ -47,11 +49,11 @@
       <CheckBox fx:id="chekremise" contentDisplay="RIGHT" layoutX="931.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#remiseTest" text="Remise" />
       <TextField fx:id="txfremise" layoutX="1131.0" layoutY="257.0" prefHeight="25.0" prefWidth="93.0" />
       <ComboBox fx:id="cbremise" layoutX="1009.0" layoutY="257.0" prefHeight="25.0" prefWidth="93.0" />
-      <Button fx:id="btnvaliderfacture" layoutX="573.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="25.0" prefWidth="61.0" text="Valider" />
-      <Button layoutX="665.0" layoutY="205.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Reset" />
-      <Button layoutX="1036.0" layoutY="302.0" mnemonicParsing="false" text="Supprimer" />
-      <Button layoutX="930.0" layoutY="302.0" mnemonicParsing="false" text="Nouveau" />
-      <Button fx:id="btnenregistrer" onMouseClicked="#commande" layoutX="1143.0" layoutY="302.0" mnemonicParsing="false" text="Enregister" />
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture" layoutX="510.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="20.0" prefWidth="107.0" style="-fx-background-color: #35BA67;" stylesheets="@../application/facture.css" text="Valider">
+         <font>
+            <Font size="63.0" />
+         </font></Button>
+      <Button id="ajouterfacturebtn" fx:id="btnenregistrer" layoutX="1131.0" layoutY="297.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#commande" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #35BA67;" stylesheets="@../application/facture.css" text="Enregister" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="174.0" layoutX="19.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="1215.0" />
       <TableView id="tvarticle" fx:id="tablearticle" layoutX="19.0" layoutY="332.0" prefHeight="174.0" prefWidth="1215.0">
          <columns>
@@ -65,17 +67,68 @@
             <TableColumn fx:id="mttccolumn" prefWidth="185.3333740234375" text="Montant TTC" />
          </columns>
       </TableView>
-      <Button layoutX="1076.0" layoutY="610.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="986.0" layoutY="610.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="897.0" layoutY="610.0" mnemonicParsing="false" text="Button" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="93.0" layoutX="961.0" layoutY="506.0" stroke="BLACK" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" width="275.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="93.0" layoutX="20.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="93.0" layoutX="485.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
-      <Separator blendMode="DARKEN" layoutX="1071.0" layoutY="505.0" orientation="VERTICAL" prefHeight="93.0" prefWidth="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="100.0" layoutX="961.0" layoutY="506.0" stroke="BLACK" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" width="276.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="100.0" layoutX="485.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+      <Separator blendMode="DARKEN" layoutX="1071.0" layoutY="505.0" orientation="VERTICAL" prefHeight="101.0" prefWidth="7.0" />
       <Label layoutX="634.0" layoutY="293.0" text="Quantité disponible:" />
       <Label fx:id="labelqd" layoutX="760.0" layoutY="293.0" />
-      <TextField fx:id="txtlibf" layoutX="576.0" layoutY="158.0" prefHeight="25.0" prefWidth="146.0" />
-      <Label layoutX="515.0" layoutY="162.0" text="Libellé" />
-      <FontAwesomeIconView fx:id="iconsearch" onMouseClicked="#rechercherArticle" glyphName="SEARCH" layoutX="215.0" layoutY="275.0" size="17" />
+      <FontAwesomeIconView fx:id="iconsearch" glyphName="SEARCH" layoutX="215.0" layoutY="275.0" onMouseClicked="#rechercherArticle" size="17" />
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture1" layoutX="668.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="20.0" prefWidth="107.0" style="-fx-background-color: #FF0000;" stylesheets="@../application/facture.css" text="Reset">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Button>
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture2" alignment="BASELINE_CENTER" layoutX="919.0" layoutY="297.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #808080;" stylesheets="@../application/facture.css" text="Nouveau" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture21" alignment="BASELINE_CENTER" layoutX="1025.0" layoutY="297.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #FF0000;" stylesheets="@../application/facture.css" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderall" layoutX="1028.0" layoutY="610.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#miseFacture" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #35BA67;" stylesheets="@../application/facture.css" text="Ok" />
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture22" alignment="BASELINE_CENTER" layoutX="922.0" layoutY="610.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #808080;" stylesheets="@../application/facture.css" text="Nouveau" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button id="ajouterfacturebtn" fx:id="btnvaliderfacture211" alignment="BASELINE_CENTER" layoutX="1137.0" layoutY="610.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#createFacture" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #FF0000;" stylesheets="@../application/facture.css" text="Annuler" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Label layoutX="987.0" layoutY="506.0" prefHeight="23.0" prefWidth="78.0" text="Total HT         :" />
+      <Label layoutX="987.0" layoutY="535.0" text="Total Remise :" />
+      <Label layoutX="986.0" layoutY="560.0" text="Total TVA      :" />
+      <Label layoutX="987.0" layoutY="577.0" prefHeight="23.0" prefWidth="74.0" text="Net a payer   :" />
+      <Separator layoutX="970.0" layoutY="531.0" prefHeight="4.0" prefWidth="258.0" />
+      <Separator layoutX="970.0" layoutY="554.0" prefHeight="4.0" prefWidth="258.0" />
+      <Separator layoutX="973.0" layoutY="575.0" prefHeight="4.0" prefWidth="258.0" />
+      <Label fx:id="labeltht" layoutX="1108.0" layoutY="509.0" text="Label" />
+      <Label fx:id="labeltr" layoutX="1109.0" layoutY="535.0" text="Label" />
+      <Label fx:id="labelttva" layoutX="1109.0" layoutY="560.0" text="Label" />
+      <Label fx:id="labelnet" layoutX="1109.0" layoutY="580.0" text="Label" />
+      <Button id="ajouterfacturebtn" fx:id="btnimprimer" alignment="BASELINE_CENTER" layoutX="574.0" layoutY="610.0" minHeight="25.0" minWidth="97.0" mnemonicParsing="false" onMouseClicked="#invoice" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #808080;" stylesheets="@../application/facture.css" text="Imprimer" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8ffed" height="100.0" layoutX="20.0" layoutY="503.0" stroke="BLACK" strokeLineJoin="BEVEL" strokeMiterLimit="0.0" width="276.0" />
+      <Separator blendMode="DARKEN" layoutX="130.0" layoutY="505.0" orientation="VERTICAL" prefHeight="101.0" prefWidth="7.0" />
+      <Label layoutX="46.0" layoutY="506.0" prefHeight="23.0" prefWidth="78.0" text="Nom Client" />
+      <Label layoutX="46.0" layoutY="535.0" text="Adressse" />
+      <Label layoutX="46.0" layoutY="577.0" prefHeight="23.0" prefWidth="74.0" text="Crédit" />
+      <Separator layoutX="29.0" layoutY="531.0" prefHeight="4.0" prefWidth="258.0" />
+      <Separator layoutX="29.0" layoutY="554.0" prefHeight="4.0" prefWidth="258.0" />
+      <Separator layoutX="32.0" layoutY="575.0" prefHeight="4.0" prefWidth="258.0" />
+      <Label fx:id="labeladr" layoutX="168.0" layoutY="535.0" text="Label" />
+      <Label fx:id="labeltel" layoutX="168.0" layoutY="560.0" text="Label" />
+      <Label fx:id="labelcr" layoutX="168.0" layoutY="580.0" text="Label" />
+      <Label layoutX="45.0" layoutY="557.0" prefHeight="23.0" prefWidth="74.0" text="Telephone" />
+      <Label fx:id="labelnom" layoutX="168.0" layoutY="509.0" text="Label" />
+      <ComboBox fx:id="cbstatut" layoutX="574.0" layoutY="158.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label layoutX="515.0" layoutY="162.0" prefHeight="17.0" prefWidth="43.0" text="Statut" />
    </children>
 </AnchorPane>

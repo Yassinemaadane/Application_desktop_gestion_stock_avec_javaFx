@@ -24,5 +24,33 @@
 	<classpathentry kind="lib" path="C:/Program Files/Java/jars/mail-5.1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jars/slf4j-api-1.7.36.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jars/testng-7.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/barcodes-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/barcodes-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/barcodes-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/font-asian-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/forms-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/forms-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/forms-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/hyph-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/io-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/io-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/io-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/kernel-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/kernel-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/kernel-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/layout-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/layout-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/layout-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdfa-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdfa-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdfa-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdftest-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdftest-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/pdftest-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/sign-7.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/sign-7.0.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yassine Maadane/Downloads/iText7-Core-7.0.8 (1)/sign-7.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jars/converter-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jars/icu4j-72.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

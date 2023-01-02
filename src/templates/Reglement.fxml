@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReglementController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff2f4" height="60.0" layoutX="326.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="267.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="234.0" layoutX="4.0" layoutY="4.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="314.0" />
+      <DatePicker layoutX="125.0" layoutY="62.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="14.0" layoutY="33.0" text="Référence" />
+      <TextField fx:id="txref" layoutX="72.0" layoutY="29.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="14.0" layoutY="100.0" text="Libellé" />
+      <TextField layoutX="67.0" layoutY="96.0" prefHeight="25.0" prefWidth="238.0" />
+      <ComboBox fx:id="cbp" layoutX="65.0" layoutY="137.0" prefHeight="25.0" prefWidth="238.0" />
+      <Label layoutX="14.0" layoutY="141.0" text="Paiement" />
+      <Label layoutX="14.0" layoutY="66.0" text="Date de réglement" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="234.0" layoutX="322.0" layoutY="4.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <Label layoutX="14.0" layoutY="180.0" prefHeight="17.0" prefWidth="61.0" text="Client :" />
+      <Label fx:id="clientlabel" layoutX="100.0" layoutY="168.0" prefHeight="41.0" prefWidth="84.0" text="Client" />
+      <Label layoutX="340.0" layoutY="33.0" prefHeight="17.0" prefWidth="84.0" text="Total TTC        :" />
+      <Label fx:id="txdr" layoutX="440.0" layoutY="66.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label layoutX="340.0" layoutY="66.0" prefHeight="17.0" prefWidth="84.0" text="Déja réglé       :" />
+      <Label fx:id="tfTTC" layoutX="440.0" layoutY="34.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label fx:id="txrr" layoutX="440.0" layoutY="100.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label layoutX="340.0" layoutY="100.0" prefHeight="17.0" prefWidth="91.0" text="Reste à régler  :" />
+      <Label layoutX="332.0" layoutY="132.0" text="Montant du réglement" />
+      <TextField fx:id="txmt" layoutX="391.0" layoutY="155.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label fx:id="labelreste" layoutX="459.0" layoutY="200.0" prefHeight="17.0" prefWidth="61.0" text="reste" />
+      <Label layoutX="359.0" layoutY="200.0" prefHeight="17.0" prefWidth="61.0" text="Reste :" />
+      <Button layoutX="231.0" layoutY="251.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="Ok" />
+      <Button layoutX="303.0" layoutY="251.0" mnemonicParsing="false" text="Annuler" />
+   </children>
+</AnchorPane>

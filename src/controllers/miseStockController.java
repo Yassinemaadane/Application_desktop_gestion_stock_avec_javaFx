@@ -42,8 +42,7 @@ public class miseStockController implements Initializable{
     @FXML
     private Button btnajouterstock;
 
-    @FXML
-    private Button btnquitter;
+
 
     @FXML
     private Button btnvalider;
@@ -79,6 +78,7 @@ public class miseStockController implements Initializable{
 	    	
 	    }
 	    
+	    private stockController stockController; 
 	    
 	    
 	    public void updateStock() throws SQLException {
@@ -105,6 +105,7 @@ public class miseStockController implements Initializable{
 					
 				}
 			       
+				
 				receiveData(ref);
 	    		
 	    		
@@ -113,10 +114,20 @@ public class miseStockController implements Initializable{
 	    	
 	    	
 	    }
-	    
-	    
-public void exit() throws IOException {
 
+	    @FXML
+	    private Button btnquitter;
+	    
+	    
+	    
+public void exit() throws IOException, SQLException {
+	
+	 Stage secondStage = new Stage();
+	 Parent root = FXMLLoader.load(getClass().getResource("/templates/stock.fxml"));
+	 Scene scene = new Scene(root);
+	 secondStage.setScene(scene);
+	 secondStage.show();
+	
 }
 	    
 		@Override

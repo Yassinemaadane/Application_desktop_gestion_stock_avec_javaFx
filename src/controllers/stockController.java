@@ -198,6 +198,9 @@ qtee=Integer.parseInt(val);
    
 }
 
+@FXML
+private Button btnmise;
+
 public void chercherStock() throws SQLException, IOException {
     article a = tablearticle.getSelectionModel().getSelectedItem();
 
@@ -209,6 +212,10 @@ if((a instanceof article)==true) {
 	
 	
 	String ref=a.getRef();
+	
+	
+	
+	/*
 	FXMLLoader loader = new FXMLLoader(getClass().getResource("/templates/miseStock.fxml"));
 	Parent root = loader.load();
 	miseStockController stcont = loader.getController();
@@ -219,17 +226,26 @@ if((a instanceof article)==true) {
 	 secondStage.initModality(Modality.APPLICATION_MODAL);
 	 secondStage.setResizable(false);
 	 secondStage.showAndWait();
-	 secondStage.setOnCloseRequest((EventHandler<WindowEvent>) new EventHandler<WindowEvent>() {
-		    public void handle(WindowEvent we) {
-		    	try {
-					showArticle();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-		    }
-		});
+	*/
+	 
+	 
 	
+		
+
+		Scene scene1 = btnmise.getScene();
+		Stage stage = (Stage) scene1.getWindow();
+		stage.close();
+		
+		
+		 Stage secondStage = new Stage();
+		 FXMLLoader loader = new FXMLLoader(getClass().getResource("/templates/miseStock.fxml"));
+			Parent root = loader.load();	
+			Scene scene = new Scene(root);
+		 miseStockController stcont = loader.getController();
+		stcont.receiveData(ref);
+		 
+		 secondStage.setScene(scene);
+		 secondStage.show();
 	
 	
 	
@@ -292,6 +308,19 @@ public void openAddAuStock() throws IOException {
 	// Scene scene = new Scene(root);
 	 Stage secondStage = new Stage();	
 	 secondStage.setScene(new Scene(root));
+	 
+	 
+	 secondStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+		    public void handle(WindowEvent we) {
+		    	try {
+					showArticle();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+		});
+	secondStage.getOnCloseRequest().handle(new WindowEvent(secondStage, WindowEvent.WINDOW_CLOSE_REQUEST));
 	 secondStage.initModality(Modality.APPLICATION_MODAL);
 	 secondStage.setResizable(false);
 	 secondStage.showAndWait();

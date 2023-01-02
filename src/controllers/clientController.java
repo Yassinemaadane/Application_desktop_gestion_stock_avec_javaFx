@@ -101,7 +101,6 @@ public void deleteselected() throws SQLException {
 	    	    Statement statement =connectDB.createStatement();
 	    	    statement.executeUpdate(sqldelete);
 
-	    	showClient();
 	    	}
 public void openAddClient() throws IOException {
 	Stage secondStage = new Stage();	
